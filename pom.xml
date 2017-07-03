@@ -30,7 +30,7 @@
        <artifactId>jmeter-maven-plugin</artifactId>  
        <version>2.2.0</version>  
        <configuration>  
-        <!--report-->  
+        <!--report for test-->  
            <appendResultsTimestamp>true</appendResultsTimestamp>  
     </configuration>  
        <executions>  
