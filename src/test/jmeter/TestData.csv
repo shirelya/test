@@ -8,5 +8,5 @@ POST,"{
   ""status"": ""string"",
   ""targetSystem"": ""string"",
   ""transactionId"": 0
-}",/transactiondata,Created
+}",/transactiondata,Test
 GET,,/nodes/test,
