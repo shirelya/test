@@ -30,7 +30,7 @@
        <artifactId>jmeter-maven-plugin</artifactId>  
        <version>2.2.0</version>  
        <configuration>  
-        <!--报告文件尾部输出时间 -->  
+        <!--report-->  
            <appendResultsTimestamp>true</appendResultsTimestamp>  
     </configuration>  
        <executions>  
