@@ -31,7 +31,8 @@
        <version>2.2.0</version>  
        <configuration>  
         <!--report for test-->  
-           <appendResultsTimestamp>true</appendResultsTimestamp> 
+           <appendResultsTimestamp>true</appendResultsTimestamp>
+           <resultsFileFormat>csv</resultsFileFormat> 
     </configuration>  
        <executions>  
            <execution>  
