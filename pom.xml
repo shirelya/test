@@ -71,7 +71,7 @@
                                 <copy todir="${basedir}/target/jmeter/bin/report-template">
                                     <fileset dir="${basedir}/src/test/resources/report-template" />
                                 </copy>
-                                <java jar="${basedir}/target/jmeter/bin/ApacheJMeter-3.2.jar" fork="true">
+                                <java jar="${basedir}/target/jmeter/bin/ApacheJMeter-3.0.jar" fork="true">
                                     <arg value="-g" />
                                     <arg value="${basedir}/target/jmeter/results/*.jtl" />
                                     <arg value="-o" />
