@@ -33,10 +33,7 @@
         <!--report for test-->  
            <appendResultsTimestamp>true</appendResultsTimestamp>
             <testResultsTimestamp>false</testResultsTimestamp>
-            <propertiesUser>
-                  <threadgroup.count>2</threadgroup.count>
-                  <threadgroup.rampup>2</threadgroup.rampup>
-                  <threadgroup.duration>5</threadgroup.duration>
+            <propertiesJMeter>
                   <jmeter.save.saveservice.output_format>csv</jmeter.save.saveservice.output_format>
                   <jmeter.save.saveservice.bytes>true</jmeter.save.saveservice.bytes>
                   <jmeter.save.saveservice.label>true</jmeter.save.saveservice.label>
@@ -47,7 +44,7 @@
                   <jmeter.save.saveservice.thread_counts>true</jmeter.save.saveservice.thread_counts>
                   <jmeter.save.saveservice.thread_name>true</jmeter.save.saveservice.thread_name>
                   <jmeter.save.saveservice.time>true</jmeter.save.saveservice.time>
-             </propertiesUser>
+             </propertiesJMeter>
     </configuration>  
        <executions>  
            <execution>  
