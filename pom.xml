@@ -32,7 +32,7 @@
        <configuration>  
         <!--report for test-->  
            <appendResultsTimestamp>true</appendResultsTimestamp>
-           <resultsFileFormat>csv</resultsFileFormat> 
+           <!--  <resultsFileFormat>csv</resultsFileFormat>  -->  
     </configuration>  
        <executions>  
            <execution>  
