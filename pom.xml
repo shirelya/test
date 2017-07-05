@@ -32,7 +32,9 @@
        <configuration>  
         <!--report for test-->  
            <appendResultsTimestamp>true</appendResultsTimestamp>
-           <responseMessage>true</responseMessage>
+           <propertiesJMeter>
+            <jmeter.save.saveservice.response_message>true</jmeter.save.saveservice.response_message>
+        </propertiesJMeter>
            <!--  <resultsFileFormat>csv</resultsFileFormat>  -->  
     </configuration>  
        <executions>  
