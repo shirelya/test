@@ -43,7 +43,7 @@
                   <jmeter.save.saveservice.successful>true</jmeter.save.saveservice.successful>
                   <jmeter.save.saveservice.thread_counts>true</jmeter.save.saveservice.thread_counts>
                   <jmeter.save.saveservice.thread_name>true</jmeter.save.saveservice.thread_name>
-                  <jmeter.save.saveservice.time>true</jmeter.save.saveservice.time>
+                  
              </propertiesJMeter>
     </configuration>  
        <executions>  
