@@ -9,4 +9,4 @@ POST,"{
   ""targetSystem"": ""string"",
   ""transactionId"": 0
 }",/transactiondata,Created
-GET,,/nodes/test,
+GET,,/transactiondata,
