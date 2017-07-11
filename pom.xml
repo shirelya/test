@@ -72,33 +72,6 @@
            </execution>  
        </executions>  
    </plugin>
-   <!-- <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>pre-site</phase>
-                        <configuration>
-                            <tasks>
-                                <mkdir dir="${basedir}/target/jmeter/results/dashboard" />
-                                <copy file="${basedir}/src/test/resources/reportgenerator.properties" 
-									              tofile="${basedir}/target/jmeter/bin/reportgenerator.properties" />
-                                <copy todir="${basedir}/target/jmeter/bin/report-template">
-                                    <fileset dir="${basedir}/src/test/resources/report-template" />
-                                </copy>
-                                <java jar="${basedir}/target/jmeter/bin/ApacheJMeter-3.0.jar" fork="true">
-                                    <arg value="-g" />
-                                    <arg value="${basedir}/target/jmeter/results/*.jtl" />
-                                    <arg value="-o" />
-                                    <arg value="${basedir}/target/jmeter/results/dashboard/" />
-                                </java>
-                            </tasks>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-   </plugin> -->
    <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
