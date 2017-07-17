@@ -1,14 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.hsx</groupId>
-  <artifactId>JTest</artifactId>
+	<groupId>test</groupId>
+	<artifactId>auto-api-test</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<packaging>jar</packaging>
 
-  <name>JTest</name>
-  <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,10 +29,10 @@
        <artifactId>jmeter-maven-plugin</artifactId>  
        <version>2.2.0</version>  
        <configuration>  
-        <!--report for test-->  
+        <!--report-->  
            <appendResultsTimestamp>true</appendResultsTimestamp>
-            <testResultsTimestamp>false</testResultsTimestamp>
-            <propertiesJMeter>
+           <testResultsTimestamp>false</testResultsTimestamp>
+           <propertiesJMeter>
                   <log_level.jmeter>DEBUG</log_level.jmeter>
                         <jmeter.save.saveservice.data_type>true</jmeter.save.saveservice.data_type>
                         <jmeter.save.saveservice.label>true</jmeter.save.saveservice.label>
@@ -60,7 +58,7 @@
                         <jmeter.save.saveservice.thread_counts>true</jmeter.save.saveservice.thread_counts>
                         <jmeter.save.saveservice.sample_count>true</jmeter.save.saveservice.sample_count>
                         <jmeter.save.saveservice.idle_time>true</jmeter.save.saveservice.idle_time>
-             </propertiesJMeter>
+             </propertiesJMeter>  
     </configuration>  
        <executions>  
            <execution>  
@@ -89,7 +87,7 @@
                     <arguments>
                         <argument>-o</argument>
                         <argument>target/jmeter/results/${jmeter.fileName}.html</argument>
-                        <argument>src/main/jmeter-results-report-apitest.xsl</argument>
+                        <argument>src/test/jmeter-results-report-apitest.xsl</argument>
                         <argument>target/jmeter/results/${jmeter.fileName}.jtl</argument>
                     </arguments>
                 </configuration>

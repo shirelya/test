@@ -1,0 +1,184 @@
+Method,IP,Path,CorrelationParameter,Parameter,Transaction,ExpectedResult1,ExpectedResult2
+POST,ems-integration-service-test.cfapps.sap.hana.ondemand.com,/configuration,QAT713,"{
+  ""description"": ""API Test"",
+  ""enabled"": true,
+  ""preview"": true,
+  ""ruleRelevant"": true,
+  ""ruleService"": ""ruleService"",
+  ""simulation"": true,
+  ""statusCode"": ""SAP.ACTIVE"",
+  ""sync"": true,
+  ""typeCode"": ""QAT713"",
+  ""inboundNodes"": [
+    {
+      ""cardinality"": ""1:N"",
+      ""description"": ""QAT713"",
+      ""enabled"": true,
+      ""nodeCode"": ""QAT713"",
+      ""ruleObjectName"": ""ruleObjectName"",
+      ""ruleRelevant"": true,
+      ""inboundNodeElements"": [
+        {
+          ""alternetiveKey"": true,
+          ""dataTypeCode"": ""SAP.Integer"",
+          ""description"": ""ID"",
+          ""elementCode"": ""ID"",
+          ""enabled"": true,
+          ""mandatory"": true,
+          ""ruleRelevant"": true
+        },
+        {
+          ""alternetiveKey"": true,
+          ""dataTypeCode"": ""SAP.Integer"",
+          ""description"": ""Test NO"",
+          ""elementCode"": ""TEST_NO"",
+          ""enabled"": true,
+          ""mandatory"": true,
+          ""ruleRelevant"": true
+        }
+      ],
+      ""inboundNodes"": [
+        {
+          ""cardinality"": ""1:N"",
+          ""description"": ""Node Test"",
+          ""enabled"": true,
+          ""nodeCode"": ""NODE1"",
+          ""ruleObjectName"": ""ruleObjectName"",
+          ""ruleRelevant"": true,
+          ""inboundNodeElements"": [
+            {
+              ""alternetiveKey"": true,
+              ""dataTypeCode"": ""SAP.Integer"",
+              ""description"": ""ID"",
+              ""elementCode"": ""ID"",
+              ""enabled"": true,
+              ""mandatory"": true,
+              ""ruleRelevant"": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}","""InboundConfiguration_createInboundType""",Inbound interface create successfully.,
+GET,ems-integration-service-test.cfapps.sap.hana.ondemand.com,/availablefields,QAT713,,"""InboundConfiguration_getAvailableFields""",,
+GET,ems-integration-service-test.cfapps.sap.hana.ondemand.com,/configuration/QAT1,QAT713,,"""InboundConfiguration_readInboundType""",,
+GET,ems-integration-service-test.cfapps.sap.hana.ondemand.com,/configurations,QAT713,,"""InboundConfiguration_getInterfaceTypesByKeywordsAndStatusCode""",,
+PUT,ems-integration-service-test.cfapps.sap.hana.ondemand.com,/configuration/QAT1,QAT713,"{
+  ""guid"": ""c1e776b2be0d4513997f929ae586e5d2"",
+  ""typeCode"": ""QAT1"",
+  ""ruleRelevant"": true,
+  ""ruleService"": ""RULE NULL"",
+  ""sync"": true,
+  ""enabled"": true,
+  ""preDelivered"": false,
+  ""description"": ""QAT1"",
+  ""statusCode"": ""SAP.ACTIVE"",
+  ""simulation"": true,
+  ""preview"": true,
+  ""createdBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+  ""createdOn"": 1499915010165,
+  ""lastChangedBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+  ""lastChangedOn"": 1499915010165,
+  ""inboundNodes"": [
+    {
+      ""guid"": ""4def060acdbd45cc8f07ca660ead332a"",
+      ""typeGUID"": ""c1e776b2be0d4513997f929ae586e5d2"",
+      ""nodeCode"": ""QAT1"",
+      ""parentNodeGUID"": null,
+      ""level"": 0,
+      ""tableName"": ""Table Name"",
+      ""ruleRelevant"": true,
+      ""ruleObjectName"": ""RULE NULL"",
+      ""cardinality"": ""1:N"",
+      ""enabled"": true,
+      ""description"": ""QAT1"",
+      ""createdBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+      ""createdOn"": 1499915010165,
+      ""lastChangedBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+      ""lastChangedOn"": 1499915010165,
+      ""inboundNodes"": [
+        {
+          ""guid"": ""4f8f9a37ea584a23a6e420f961738f22"",
+          ""typeGUID"": ""c1e776b2be0d4513997f929ae586e5d2"",
+          ""nodeCode"": ""NODE1"",
+          ""parentNodeGUID"": ""4def060acdbd45cc8f07ca660ead332a"",
+          ""level"": 1,
+          ""tableName"": ""Table Name"",
+          ""ruleRelevant"": true,
+          ""ruleObjectName"": ""RULE NULL"",
+          ""cardinality"": ""1:N"",
+          ""enabled"": true,
+          ""description"": ""Node Test"",
+          ""createdBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+          ""createdOn"": 1499915010165,
+          ""lastChangedBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+          ""lastChangedOn"": 1499915010165,
+          ""inboundNodes"": [],
+          ""inboundNodeElements"": [
+            {
+              ""guid"": ""73bfcdc5bfa14ead89d8d685e85a9511"",
+              ""nodeGUID"": ""4f8f9a37ea584a23a6e420f961738f22"",
+              ""typeGUID"": ""c1e776b2be0d4513997f929ae586e5d2"",
+              ""elementCode"": ""ID"",
+              ""dataTypeCode"": ""SAP.Integer"",
+              ""mandatory"": true,
+              ""ruleRelevant"": true,
+              ""tableName"": ""Table Name"",
+              ""columnName"": ""ID"",
+              ""enabled"": true,
+              ""alternetiveKey"": true,
+              ""parentKey"": false,
+              ""description"": ""ID"",
+              ""createdBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+              ""createdOn"": 1499915010165,
+              ""lastChangedBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+              ""lastChangedOn"": 1499915010165
+            }
+          ]
+        }
+      ],
+      ""inboundNodeElements"": [
+        {
+          ""guid"": ""e1e5d6d0501c484f9176cab50db2ac5f"",
+          ""nodeGUID"": ""4def060acdbd45cc8f07ca660ead332a"",
+          ""typeGUID"": ""c1e776b2be0d4513997f929ae586e5d2"",
+          ""elementCode"": ""TEST_NO"",
+          ""dataTypeCode"": ""SAP.Integer"",
+          ""mandatory"": true,
+          ""ruleRelevant"": true,
+          ""tableName"": ""Table Name"",
+          ""columnName"": ""Test NO"",
+          ""enabled"": true,
+          ""alternetiveKey"": true,
+          ""parentKey"": false,
+          ""description"": ""Test NO"",
+          ""createdBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+          ""createdOn"": 1499915010165,
+          ""lastChangedBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+          ""lastChangedOn"": 1499915010165
+        },
+        {
+          ""guid"": ""77d37d47e8224cc4b83d1c596aeee767"",
+          ""nodeGUID"": ""4def060acdbd45cc8f07ca660ead332a"",
+          ""typeGUID"": ""c1e776b2be0d4513997f929ae586e5d2"",
+          ""elementCode"": ""ID"",
+          ""dataTypeCode"": ""SAP.Integer"",
+          ""mandatory"": true,
+          ""ruleRelevant"": true,
+          ""tableName"": ""Table Name"",
+          ""columnName"": ""ID"",
+          ""enabled"": true,
+          ""alternetiveKey"": true,
+          ""parentKey"": false,
+          ""description"": ""ID"",
+          ""createdBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+          ""createdOn"": 1499915010165,
+          ""lastChangedBy"": "" NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"",
+          ""lastChangedOn"": 1499915010165
+        }
+      ]
+    }
+  ]
+}","""InboundConfiguration_saveInboundType""",Inbound interface save successfully.,
+DELETE,ems-integration-service-test.cfapps.sap.hana.ondemand.com,/configuration/,QAT713,,"""InboundConfiguration_deleteInboundType""",delete,

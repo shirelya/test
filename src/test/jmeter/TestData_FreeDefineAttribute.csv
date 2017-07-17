@@ -1,0 +1,27 @@
+Method,IP,Path,Parameter,CorrelationParameter,Transaction,ExpectedResult1,ExpectedResult2
+POST,ems-admin-service-test.cfapps.sap.hana.ondemand.com,/attributes,"{
+  ""attributeId"": ""attrIDfromJmeter"",
+  ""attributeName"": ""attrNameDate7504"",
+  ""categoryGuidList"": [
+    ""109667c460744a739d2f53a77df1255a"",""9bcce74828d14076a2e66a1490a6dd60""
+  ],
+  ""dataType"": ""Date"",
+  ""description"": ""It's created by API Testing, it's a Date type"",
+  ""operation"": ""create"",
+  ""unitGuid"": ""string"",
+  ""valueListGuid"": ""string""
+}",attrIDfromJmeter,"""Free Defined Attribute_Create New_Date Type""",Entitlement Attribute create successfully,
+GET,ems-admin-service-test.cfapps.sap.hana.ondemand.com,/odata.svc/EntitlementAttributeViews,,attrIDfromJmeter,"""Free Defined Attribute_Attribute List""",attrIDfromJmeter,
+PUT,ems-admin-service-test.cfapps.sap.hana.ondemand.com,/attributes,"{
+  ""attributeId"": ""attrIDfromJmeter"",
+  ""attributeName"": ""Updated"",
+  ""categoryGuidList"": [
+    ""109667c460744a739d2f53a77df1255a"",""9bcce74828d14076a2e66a1490a6dd60""
+  ],
+  ""dataType"": ""Date"",
+  ""description"": ""It's created by API Testing, it's a Date type"",
+  ""operation"": ""create"",
+  ""unitGuid"": ""string"",
+  ""valueListGuid"": ""string""
+}",attrIDfromJmeter,"""Free Defined Attribute_Update Attribute""",Entitlement Attribute edit successfully,
+DELETE,ems-admin-service-test.cfapps.sap.hana.ondemand.com,/attributes/,,attrIDfromJmeter,"""Free Defined Attribute_DeletetheNewCreatedOne""",Entitlement Attribute delete successfully,

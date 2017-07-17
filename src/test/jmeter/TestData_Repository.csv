@@ -1,0 +1,2 @@
+Method,IP,Path,Parameter,Transaction,ExpectedResult1,ExpectedResult2
+GET,ems-admin-service-test.cfapps.sap.hana.ondemand.com,"/odata.svc/EntitlementEntitys?$orderby=EntitlementNo%20desc,RefDocType%20desc&$filter=(CustomerId%20eq%20%27C1011%27)and(Status%20eq%20%27New%27)and(substringof(%27SAP%27,EntitlementDescription))and(ValidFrom%20gt%20datetime%272015-02-05T00:00:00%27)and(ValidTo%20lt%20datetime%272019-02-05T00:00:00%27)",,"""Entitlement Repository_List_Combine Filter and Sort""",SAP,New
